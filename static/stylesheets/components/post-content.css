@@ -1,0 +1,47 @@
+@scope (.post-content) {
+  :scope {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  @scope (.contents) {
+    :scope {
+      display: grid;
+      gap: 0.2rem;
+    }
+  }
+
+  @scope (.content) {
+    :scope {
+      display: grid;
+      grid-template:
+        "heading" auto
+        "content" auto / auto;
+      gap: 0.2rem;
+
+      & + & {
+        margin-block-start: 0.5rem;
+      }
+    }
+
+    h2,
+    h3 {
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+  }
+
+  @scope (.button-group) {
+    :scope {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 0.5rem;
+
+      & > * {
+        min-width: 100px;
+      }
+    }
+  }
+}

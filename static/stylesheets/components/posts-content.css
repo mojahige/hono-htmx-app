@@ -1,0 +1,13 @@
+@scope (.posts-content) {
+  :scope {
+    padding: 1rem;
+  }
+
+  @scope (.posts) {
+    :scope {
+      & > * + * {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

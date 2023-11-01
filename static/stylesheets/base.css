@@ -1,0 +1,34 @@
+html {
+  color: var(--color-black);
+  font-family: sans-serif;
+}
+
+input,
+textarea {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+input,
+textarea,
+button {
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline-offset: 0.4rem;
+    outline-color: revert;
+  }
+}
+
+hr {
+  height: 2px;
+  border: 0;
+  background-color: var(--border-color);
+}
+
+ul,
+dl {
+  padding: revert;
+}
