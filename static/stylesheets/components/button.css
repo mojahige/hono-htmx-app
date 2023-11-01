@@ -1,0 +1,27 @@
+@scope (.button) {
+  :scope {
+    --block-gutter: 0.5rem;
+    --inline-gutter: 0.5rem;
+    --background-color: var(--color-gray);
+    --color: var(--color-white);
+
+    padding-block: var(--block-gutter);
+    padding-inline: var(--inline-gutter);
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    color: var(--color);
+
+    &.-sm {
+      --block-gutter: 0.25rem;
+      font-size: var(--font-sm);
+    }
+
+    &.-blue {
+      --background-color: var(--color-blue);
+    }
+
+    &.-red {
+      --background-color: var(--color-red);
+    }
+  }
+}

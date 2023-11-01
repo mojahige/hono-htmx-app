@@ -1,0 +1,25 @@
+@scope (.header) {
+  :scope {
+    padding: 0.5rem;
+    background-color: lightgray;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    font-size: var(--font-sm);
+
+    & ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      gap: 0.5rem;
+    }
+
+    & a {
+      color: inherit;
+    }
+  }
+}

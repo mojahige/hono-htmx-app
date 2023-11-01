@@ -1,0 +1,46 @@
+@scope (.post-edit-form) {
+  :scope {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  @scope (.control) {
+    :scope {
+      display: grid;
+      grid-template:
+        "label" auto
+        "control" auto / auto;
+      gap: 0.2rem;
+
+      & + & {
+        margin-block-start: 0.5rem;
+      }
+    }
+
+    input,
+    textarea {
+      &:user-invalid {
+        border-color: red;
+        background-color: pink;
+      }
+    }
+
+    label {
+      font-size: 0.875rem;
+      font-weight: 700;
+    }
+  }
+
+  @scope (.button-group) {
+    :scope {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      & > * {
+        min-width: 100px;
+      }
+    }
+  }
+}

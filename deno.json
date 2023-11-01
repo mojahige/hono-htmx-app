@@ -1,0 +1,32 @@
+{
+  "tasks": {
+    "dev": "deno run --unstable --allow-net --allow-read --watch index.tsx",
+    "format": "deno fmt",
+    "lint": "deno lint",
+    "run": "deno run --unstable --allow-net --allow-read index.tsx",
+    "test": "deno test --unstable --allow-all"
+  },
+  "importMap": "./import-map.json",
+  "compilerOptions": {
+    "lib": [
+      "deno.window"
+    ],
+    "strict": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "lint": {
+    "include": [
+      "."
+    ],
+    "rules": {
+      "tags": [
+        "recommended"
+      ]
+    }
+  },
+  "fmt": {
+    "include": [
+      "."
+    ]
+  }
+}
