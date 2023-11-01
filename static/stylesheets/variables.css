@@ -1,0 +1,14 @@
+:root {
+  --color-black: #333;
+  --color-white: #fff;
+  --color-gray: #666;
+  --color-blue: hsl(from steelblue h 100% 30%);
+  --color-red: hsl(from crimson h 100% 30%);
+
+  --border-color: var(--color-black);
+  --border-radius: 0.2rem;
+
+  --font-lg: 1.25rem;
+  --font-md: 1rem;
+  --font-sm: 0.875rem;
+}

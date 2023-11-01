@@ -1,0 +1,22 @@
+{
+  "deno.enablePaths": ["./"],
+  "deno.enable": true,
+  "editor.inlayHints.enabled": "off",
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "eslint.enable": false,
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "cssvar.files": [
+    "static/stylesheets/variables.css"
+  ]
+}
