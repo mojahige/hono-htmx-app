@@ -2,10 +2,11 @@
 
 ## Use
 
-- Hono
-- Deno
-- htmx
-- hyperscript
+- [Hono](https://hono.dev/)
+- [htmx](https://htmx.org/)
+- [Deno](https://deno.com/)
+- [hyperscript](https://hyperscript.org/)
+- [valibot](https://deno.land/x/valibot@v0.20.0)
 
 ## Development
 
@@ -18,4 +19,7 @@ deno task lint
 
 # Format
 deno task format
+
+# Test
+deno task test
 ```
