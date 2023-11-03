@@ -26,4 +26,4 @@ deno task test
 
 ## 📸
 
-https://github.com/mojahige/hono-htmx-app/assets/13248811/bd6fa6cc-a921-4aea-bc2e-024dad01646f
+https://github.com/mojahige/hono-htmx-app/assets/13248811/4329a870-58c9-4137-9058-7085a950b883
