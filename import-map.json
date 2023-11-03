@@ -5,7 +5,8 @@
     "assert/": "https://deno.land/std@0.204.0/assert/",
     "testing/": "https://deno.land/std@0.204.0/testing/",
     "datetime/": "https://deno.land/std@0.204.0/datetime/",
-    "valibot/": "https://deno.land/x/valibot@v0.19.0/"
+    "valibot/": "https://deno.land/x/valibot@v0.19.0/",
+    "sinco/": "https://deno.land/x/sinco@v4.1.0/"
   },
   "scopes": {}
 }
