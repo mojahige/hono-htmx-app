@@ -4,7 +4,8 @@
     "format": "deno fmt",
     "lint": "deno lint",
     "run": "deno run --unstable --allow-net --allow-read index.tsx",
-    "test": "deno test --unstable --allow-all"
+    "test": "deno test --unstable --allow-all tests",
+    "test:e2e": "deno test e2e"
   },
   "importMap": "./import-map.json",
   "compilerOptions": {
