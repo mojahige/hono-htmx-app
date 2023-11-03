@@ -9,7 +9,10 @@
   "importMap": "./import-map.json",
   "compilerOptions": {
     "lib": [
-      "deno.window"
+      "deno.window",
+      "deno.ns",
+      "deno.unstable",
+      "dom"
     ],
     "strict": true,
     "noUncheckedIndexedAccess": true

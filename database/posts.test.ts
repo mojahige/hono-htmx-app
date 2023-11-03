@@ -1,5 +1,3 @@
-/// <reference lib="deno.unstable" />
-
 import { assert, assertArrayIncludes, assertObjectMatch } from "assert/mod.ts";
 import { FakeTime } from "testing/time.ts";
 import Posts from "./posts.ts";
