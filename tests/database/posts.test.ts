@@ -1,6 +1,6 @@
 import { assert, assertArrayIncludes, assertObjectMatch } from "assert/mod.ts";
 import { FakeTime } from "testing/time.ts";
-import Posts from "./posts.ts";
+import Posts from "@/database/posts.ts";
 import { Post } from "@/models/post.ts";
 
 Deno.test("posts", async (t) => {
