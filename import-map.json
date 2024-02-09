@@ -1,7 +1,7 @@
 {
   "imports": {
     "@/": "./",
-    "hono/": "https://deno.land/x/hono@v3.12.1/",
+    "hono/": "https://deno.land/x/hono@v4.0.0/",
     "assert/": "https://deno.land/std@0.215.0/assert/",
     "testing/": "https://deno.land/std@0.215.0/testing/",
     "datetime/": "https://deno.land/std@0.215.0/datetime/",
