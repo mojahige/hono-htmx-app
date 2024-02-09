@@ -1,14 +1,14 @@
-import { html } from "hono/middleware.ts";
-import { Child, FC } from "hono/jsx/index.ts";
+import { html } from "hono/helper.ts";
+import type { Child, PropsWithChildren } from "hono/middleware.ts";
 
-export const Layout: FC<{
-  title?: string;
-  headContents?: Child;
-}> = ({
+export const Layout = ({
   title,
   headContents,
   children,
-}) =>
+}: PropsWithChildren<{
+  title?: string;
+  headContents?: Child;
+}>) =>
   html`
 <!DOCTYPE html>
 <html lang="en">
