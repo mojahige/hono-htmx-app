@@ -3,7 +3,15 @@
   "ignorePaths": [],
   "dictionaryDefinitions": [],
   "dictionaries": [],
-  "words": ["deno", "hono", "datetime", "valibot", "htmx", "hyperscript", "sinco"],
+  "words": [
+    "deno",
+    "hono",
+    "datetime",
+    "valibot",
+    "htmx",
+    "hyperscript",
+    "sinco"
+  ],
   "ignoreWords": [],
   "import": []
 }

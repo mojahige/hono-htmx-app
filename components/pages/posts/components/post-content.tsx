@@ -18,8 +18,6 @@ export const PostContent = ({
       class="post-content"
       hx-target="this"
       hx-swap="outerHTML"
-      tabIndex="-1"
-      autofocus
     >
       <div class="contents">
         <div class="content">

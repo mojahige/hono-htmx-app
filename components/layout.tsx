@@ -1,14 +1,14 @@
-import { html } from "hono/middleware.ts";
+import { html } from "hono/helper.ts";
+import type { Child, PropsWithChildren } from "hono/middleware.ts";
 
 export const Layout = ({
   title,
   headContents,
   children,
-}: {
+}: PropsWithChildren<{
   title?: string;
-  headContents?: string | string[];
-  children?: string | string[];
-}) =>
+  headContents?: Child;
+}>) =>
   html`
 <!DOCTYPE html>
 <html lang="en">
