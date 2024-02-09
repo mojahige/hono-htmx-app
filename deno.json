@@ -1,12 +1,12 @@
 {
   "tasks": {
     "dev": "deno run --unstable-kv --allow-net --allow-read --watch index.tsx",
-    "check": "deno check",
     "format": "deno fmt",
     "lint": "deno lint",
     "run": "deno run --unstable-kv --allow-net --allow-read index.tsx",
     "test": "deno test --unstable-kv --allow-all tests",
-    "test:e2e": "deno test e2e"
+    "test:e2e": "deno test e2e",
+    "type-check": "deno check **/*.ts && deno check **/*.tsx"
   },
   "importMap": "./import-map.json",
   "compilerOptions": {
