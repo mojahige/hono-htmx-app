@@ -1,13 +1,13 @@
 import { html } from "hono/middleware.ts";
+import { Child, FC } from "hono/jsx/index.ts";
 
-export const Layout = ({
+export const Layout: FC<{
+  title?: string;
+  headContents?: Child;
+}> = ({
   title,
   headContents,
   children,
-}: {
-  title?: string;
-  headContents?: string | string[];
-  children?: string | string[];
 }) =>
   html`
 <!DOCTYPE html>
