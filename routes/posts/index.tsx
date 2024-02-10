@@ -22,7 +22,9 @@ posts.get("/:id", async (c) => {
   const result = await postsKv.get(id);
 
   if (!result) {
-    return c.body(null, 204);
+    return c.json({
+      message: "Not found",
+    }, 404);
   }
 
   return c.html(
@@ -40,7 +42,9 @@ posts.get("/:id/edit", async (c) => {
   const result = await postsKv.get(id);
 
   if (!result) {
-    return c.body(null, 204);
+    return c.json({
+      message: "Not found",
+    }, 404);
   }
 
   return c.html(
@@ -102,7 +106,9 @@ posts.put(
     const result = await postsKv.update(id, c.req.valid("form"));
 
     if (!result) {
-      return c.body(null, 204);
+      return c.json({
+        message: "Not found",
+      }, 404);
     }
 
     return c.html(
